@@ -3,14 +3,14 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 NOMBRE = "David Fabro"
-CANCION_FAVORITA = "Gladiador - Eladio Carrion"
+Album_Favorito = "Monarca - Eladio Carrion"
 
 
 @app.route("/api/favorito", methods=["GET"])
 def favorito():
     return jsonify({
         "Nombre": NOMBRE,
-        "Cancion Favorita": CANCION_FAVORITA
+        "Album Favorito": Album_Favorito
     })
 
 
